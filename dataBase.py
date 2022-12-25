@@ -15,7 +15,7 @@ class DataBase:
             self.conn = sqlite3.connect('data.db')
         except sqlite3.Error as error:
             print("Ошибка при работе с SQLite", error)
-            exit(0)
+            exit(0) 
 
     def close(self):
         try:

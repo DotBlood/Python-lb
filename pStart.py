@@ -96,7 +96,7 @@ class PStart:
                 os.makedirs(mainDir+'Log')
                 return True
             except OSError as error:
-                return False
+                return False # looger
         else:
             return True
 
