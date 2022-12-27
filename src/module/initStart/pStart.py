@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
-import config
-from dataBase import DataBase
+import src.module.Config.config as config
+from src.module.Database.dataBase import DataBase
 import urllib.request
 import urllib.error
 import json
@@ -96,7 +96,7 @@ class PStart:
                 os.makedirs(mainDir+'Log')
                 return True
             except OSError as error:
-                return False # looger
+                return False  # looger
         else:
             return True
 
